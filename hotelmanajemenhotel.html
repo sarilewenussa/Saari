@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #555;
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .room {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Management System</h1>
+    </header>
+
+    <nav>
+        <a href="#rooms">Rooms</a>
+        <a href="#bookings">Bookings</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="container">
+        <section id="rooms">
+            <h2>Available Rooms</h2>
+            <div class="room">
+                <h3>Room 101</h3>
+                <p>Type: Single</p>
+                <p>Price: $100 per night</p>
+            </div>
+            <div class="room">
+                <h3>Room 102</h3>
+                <p>Type: Double</p>
+                <p>Price: $150 per night</p>
+            </div>
+            <div class="room">
+                <h3>Room 103</h3>
+                <p>Type: Suite</p>
+                <p>Price: $300 per night</p>
+            </div>
+        </section>
+
+        <section id="bookings">
+            <h2>Book a Room</h2>
+            <form action="#" method="post">
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" name="customer-name" required><br><br>
+
+                <label for="room-number">Room Number:</label>
+                <select id="room-number" name="room-number" required>
+                    <option value="101">Room 101</option>
+                    <option value="102">Room 102</option>
+                    <option value="103">Room 103</option>
+                </select><br><br>
+
+                <label for="check-in">Check-In Date:</label>
+                <input type="date" id="check-in" name="check-in" required><br><br>
+
+                <label for="check-out">Check-Out Date:</label>
+                <input type="date" id="check-out" name="check-out" required><br><br>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>About Our Hotel</h2>
+            <p>Welcome to our hotel! We offer comfortable rooms and excellent service to make your stay enjoyable.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Hotel Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
